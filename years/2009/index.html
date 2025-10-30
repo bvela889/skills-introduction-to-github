@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio 2009</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .back-btn {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .back-btn:hover {
+            background: #5568d3;
+        }
+        
+        .content {
+            margin-top: 30px;
+        }
+        
+        .info-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .file-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .file-item {
+            padding: 15px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .file-name {
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .file-date {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .empty-message {
+            text-align: center;
+            color: #666;
+            padding: 40px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Directorio 2009</h1>
+            <a href="../../index.html" class="back-btn">← Volver al Directorio</a>
+        </header>
+        
+        <div class="content">
+            <div class="info-section">
+                <h2>Información del Año 2009</h2>
+                <p>Este es el directorio del año 2009. Aquí puedes almacenar y organizar documentos, archivos y recursos correspondientes a este período.</p>
+            </div>
+            
+            <div class="info-section">
+                <h2>Archivos y Documentos</h2>
+                <div class="empty-message">
+                    No hay archivos disponibles en este directorio.
+                    <br><br>
+                    Puedes agregar archivos creando carpetas y documentos dentro de este directorio.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Verificar autenticación
+        function checkAuth() {
+            const loggedIn = sessionStorage.getItem('loggedIn');
+            
+            if (!loggedIn || loggedIn !== 'true') {
+                window.location.href = '../../login.html';
+                return;
+            }
+        }
+        
+        checkAuth();
+    </script>
+</body>
+</html>
