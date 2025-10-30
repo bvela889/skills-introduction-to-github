@@ -37,12 +37,46 @@ El sistema incluye una página de login (`login.html`) que protege el acceso al 
 - ✅ Navegación intuitiva entre años
 - ✅ Protección de sesión con sessionStorage
 
-## 💻 Uso
+## 📥 Cómo Obtener el Proyecto
 
-1. Abre `login.html` en tu navegador
-2. Ingresa las credenciales (admin/admin2025)
-3. Navega por el directorio anual
-4. Selecciona cualquier año para ver su contenido
+Hay dos formas de obtener el proyecto en tu computadora:
+
+### Opción 1: Descargar como ZIP (Más Fácil)
+
+1. Ve a la página principal del repositorio en GitHub
+2. Haz clic en el botón verde **"Code"**
+3. Selecciona **"Download ZIP"**
+4. Descomprime el archivo ZIP en tu computadora
+5. Abre la carpeta descomprimida
+
+### Opción 2: Clonar con Git
+
+Si tienes Git instalado:
+
+```bash
+git clone https://github.com/bvela889/skills-introduction-to-github.git
+cd skills-introduction-to-github
+```
+
+## 💻 Cómo Usar el Proyecto
+
+Una vez que tengas los archivos en tu computadora:
+
+1. Navega a la carpeta del proyecto
+2. Abre el archivo `login.html` con tu navegador web:
+   - **Opción A:** Doble clic en `login.html` (se abrirá con tu navegador predeterminado)
+   - **Opción B:** Clic derecho en `login.html` → "Abrir con" → Selecciona tu navegador (Chrome, Firefox, Edge, etc.)
+3. Ingresa las credenciales:
+   - **Usuario:** admin
+   - **Contraseña:** admin2025
+4. Navega por el directorio anual
+5. Selecciona cualquier año (2009-2025) para ver su contenido
+
+### Estructura de Archivos
+
+- **login.html** - Archivo principal para iniciar sesión (¡Empieza aquí!)
+- **index.html** - Página del directorio (se abre automáticamente después del login)
+- **years/** - Carpeta con los 17 años (2009-2025), cada uno con su propia página
 
 ## 🎨 Diseño
 
